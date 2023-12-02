@@ -47,7 +47,6 @@
 
 #navbar .logo img {
     display: flex;
-    align-items:left;
     width: 120px;
     height: 80px;
     cursor: pointer;
