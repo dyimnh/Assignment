@@ -2,12 +2,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
   body{
+    
     margin: 0;
     padding: 0;
     
     
   }
-  html {margin: 0;
+  html {width:100%;
+    margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     scroll-padding: var(--scroll-padding, 15rem);
@@ -156,8 +158,11 @@ header {
     .five{background-color:rgb(255, 255, 223);
       min-height: 100px;
       display:flex;
+      width:100%;
       justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */}
+      align-items: center;
+      height:130vh; /* Center vertically */
+    }
   /* .container{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -270,7 +275,11 @@ width:75%;
 
 /* Tour section styles */
 .tour {
-  padding: 50px;
+  width:100%;text-align: center;
+  margin-bottom: 25px;
+  font-size: 35px;
+  margin-top: -4%;
+  
 }
 
 .preview {
@@ -286,7 +295,7 @@ width:75%;
 
 .tour-item img {
   width: 800px;
-  height: 700px;
+  height: 900px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -300,6 +309,10 @@ width:75%;
   display: block;
 }
 
-
-
+.footer{background-color:rgb(0, 0, 0);
+  
+  display:flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */}
+ 
 
