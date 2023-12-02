@@ -6,42 +6,137 @@
   <meta name="viewport" content="width=device-width">
   <title>ASG1</title>
   <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
 
-  <body>
+<body>
+  <script src="script.js"></script>
+  <header>
+    <nav id="navbar">
+      <div class="logo">
+        <a href="#homepage"><img src="images/download.jpg" alt="logo"></a>
+      </div>
 
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#music">Music</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#store">Store</a></li>
+        <li class="nav-item"><a href="#tour">Tours</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+  
 
-        <div class ="box-area">
-            <header>
-              <div class = "wrapper">
-                <div class="logo">
-                  <a href = "#"></a>
-                </div>
-          
-                <nav>
-                  <a href = '#'>About</a>
-                  <a href = '#'>Music</a>
-                  <a href = '#'>Merchandise</a>
-                  <a href = '#'>Find us</a>
-                  <a href = '#'>Find us</a>
-    
-                  </nav>
-                </header>
+  <div id = "homepage" class="homepage">
+    <a class="homepage"></a>
+  </div>
 
-      <section class = "one">
-        <h1>Icyball</h1>
-      </section>
+  <a class="music"></a>
+  <div class="two">
+    <div class="title">
+      <h1>Music</h1>
+    </div>
+    <div id="music">
+      <div class="container">
+        <div class="embedded" style="display: flex; height: 400px; max-width:100%">
+          <section class="spotify" style="flex: 1; height: 100%;">
+            <iframe style="border-radius:12px; width: 100%; height: 100%;"
+              src="https://open.spotify.com/embed/artist/6HvZYsbFfjnjFrWF950C9d?utm_source=generator"
+              frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+          </section>
+          <section class="embedded" style="flex: 1; height: 100%;">
+            <iframe allow="autoplay ; encrypted-media; fullscreen *; clipboard-write" frameborder="0"
+              style="width: 100%; height: 100%; max-width: none; overflow:hidden;border-radius:10px;"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+              src="https://embed.music.apple.com/us/playlist/new-year-2023-newjeans/pl.3355ad45067d442abc6f6af70b286929"></iframe>
+          </section>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="three">
+    <a class="about"></a>
+    <div id="about" class="about">
+      <h1>About</h1>
+      <p class="intro">NewJeans is a South Korean girl group formed by ADOR, a subsidiary of HYBE Labels. The group consists of five members: <b>Minji, Hanni, Danielle, Haerin, and Hyein</b>. They debuted on July 22, 2022, with the single “Attention” and released their self-titled debut extended play on August 1, 2022. NewJeans is known for their fresh image and music that blends pop and R&B with influences from various dance and club styles.
 
-      <section class = "two">
-        <h1>Icyball</h1>
-      </section>
-
+        Each member brings their unique background and talents to the group:
+        
+        Minji is the group’s rapper, known for her energetic performances and love for journaling.
+        Hanni is a vocalist with Vietnamese-Australian heritage, adding a multicultural flair to the group.
+        Danielle contributes her vocal skills and has a background in television and dance.
+        Haerin and Hyein round out the group with their vocal talents and youthful energy.
+        
+        NewJeans has quickly gained popularity for their catchy tunes and relatable lyrics, appealing to a wide audience both in South Korea and internationally
+        </p>
       
-      <section class = "three">
-        <h1>Icyball</h1>
-      </section>
 
-      <section class = "four">
-        <h1>Icyball</h1>
-      </section>
+    </div>
+  </div>
+  <div class="four">
+    <a class="store"></a>
+    <div id="store" class="store">
+      <h1>Store</h1>
+      <div class="slider">
+          <div class="slides">
+            <a href="https://shop.newjeans-official.us/products/newjeans-2nd-ep-get-up-the-powerpuff-girls-x-nj-box-ver" target="_blank">
+              <img src="images/merch1.png" alt="Merch 1">
+            </a>
+            <a href="https://shop.newjeans-official.us/products/newjeans-1st-ep-newjeans" target="_blank">
+              <img src="images/merch2.png" alt="Merch 2">
+            </a>
+            <a href="https://shop.newjeans-official.us/products/newjeans-2nd-ep-get-up-digital-ep" target="_blank">
+              <img src="images/merch3.png" alt="Merch 3">
+            </a>
+            <a href="https://shop.newjeans-official.us/products/newjeans-omg" target="_blank">
+              <img src="images/merch4.png" alt="Merch 4">
+            </a>
+          </div>
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </div>
+  </div>
+  
+
+  <div class="five">
+    <div class="tour">
+      <h1>Tour</h1>
+      <div class="preview">
+        <div class="tour-item" onclick="showTour('tour1')">
+          <img src="images/tour1.jpg" alt="Tour 1">
+          <h3>Tour 1</h3>
+        </div>
+        <div class="tour-item" onclick="showTour('tour2')">
+          <img src="images/tour2.jpg" alt="Tour 2">
+          <h3>Tour 2</h3>
+        </div>
+        <!-- Add more tour items as needed -->
+      </div>
+      <div class="tour-details">
+        <div id="tour1" class="tour-content">
+          <!-- Details for Tour 1 -->
+          <h2>Tour 1 Details</h2>
+          <p>Description of Tour 1...</p>
+        </div>
+        <div id="tour2" class="tour-content">
+          <!-- Details for Tour 2 -->
+          <h2>Tour 2 Details</h2>
+          <p>Description of Tour 2...</p>
+        </div>
+        <!-- Add more tour details as needed -->
+      </div>
+    </div>
+
+
+  <footer>
+  </footer>
+</body>
+
+</html>

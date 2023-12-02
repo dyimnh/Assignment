@@ -1,73 +1,305 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+  body{
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  html {margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 15rem);
+  }
+  
+  .primary-navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+    background: var(--clr-primary-400);
+  }
+  
 
   * {margin: 0;
     padding: 0;
     box-sizing: border-box;
   font-family: "Poppins", sans-serif;}
 
-  header{
-    width:100%;
-    height: 100px;
-    background: beige;
-    position: fixed;
+  #navbar,
+.nav-menu {
+    display: flex;
 }
 
-  nav{float:right;
-    line-height: 100px;}
+#navbar {
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+    align-items: center;
+    /* height: 17vh; */
+    height: 100px;  
+    
+}
+
+#navbar .logo img {
+    display: flex;
+    align-items:left;
+    width: 120px;
+    height: 80px;
+    cursor: pointer;
+    padding: 0;
+}
+#navbar .nav-menu {
+    margin-left: auto;
+    margin-right: 50px;
+    gap: 2rem;
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer;
+    /* transition: color 0.15s; */
+    
+}
+
+#navbar a {  
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 40px;
+    width: 120px;
+    height: 80px;
+}
+
+#navbar .nav-menu a:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(255, 215, 234);
+}
+header {
+  width: 100%;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.homepage {
+  background-image: url('images/NewJeans.PNG');
+  height: 100vh;   
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+    nav{
+    line-height: 100px;} 
     nav a{
         text-decoration:none;
         font-family: "Poppins", sans-serif;
-        font-size: 35px;
-        color: blue
-        padding: 50px 70px;
-        margin: 0 15px;
+        padding: 70px 50px 20px;
+        margin-right: 20px;
+    }  
+    
+
+    /* .one{
+      background-color: rgba(0, 0, 0, 0.5);
+      background-image: url("images/NewJeans.PNG");
+      
+    }  */
+  
+    .two {
+      display: flex;
+      background-color:rgb(255, 255, 223);
+      flex-direction: column; /* Arrange children elements in a column */
+      align-items: center; /* Center horizontally */
+      justify-content: center; /* Center vertically */
+      height: 105vh; /* Ensure the section covers the viewport height */
     }
-    nav a:hover{
-        background: black;
-        color:aquamarine;
+    
+    /* .container {
+      max-width: 100%; /* Adjust the max-width as needed */
+    
+     /* .music{margin-bottom: 30px;} */
+  
+    .three {
+      background-color: rgb(255, 255, 223);
+      min-height: 100px;
+      display: flex;
+      height:105vh;
+      
     }
-    .banner-area{
-        background-image: url('headerr.jpg');
-        background-size: cover;
-        background-position: center center;
-        top:   100px;
-        height: 1200px;
-        width: 100%;
-        position: fixed;
+    
+  
+    .four{
+      background-color:rgb(255, 255, 223);
+      min-height: 100px;
+      display:flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
     }
 
-  .container{
+    .five{background-color:rgb(255, 255, 223);
+      min-height: 100px;
+      display:flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */}
+  /* .container{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh
-  }
-
-  section{
     height: 100vh;
-    display:flex;
+  } */
+
+  /* section{
+    
+    /* display:flex; 
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+  } */
 
-  }
+  h1{color:rgb(63, 63, 63);
+text-shadow: 1px 1px 2px #fac9c9;
+font-size:35px;
+margin-bottom:30px;}
 
-  h1{color:antiquewhite;
-text-shadow: 1px 1 px 4 px #000}
+.two h1{flex-basis:100%;}
 
-  .one{
-    background-color:rgb(243, 166, 64), 77)
-  }
 
-  .two{
-    background-color:rgb(20, 200, 255)
-  }
 
-  .three{
-    background-color:rgb(54, 202, 248)
-  }
+.about{
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 35px;
+  margin-top: -4%;
+}
 
-  .four{
-    background-color:rgb(7, 255, 110)
-  }
+.embedded{display:flex;
+align-items:center;
+justify-content:center;}
+
+.intro{text-align:center;
+  align-content:center;
+font-size:20px;
+font-family: "Poppins", sans-serif;
+padding-left:25%;
+width:75%;
+}
+
+.store{text-align: center;
+  margin-bottom: 25px;
+  margin-top: -30px;
+  font-size: 35px;}
+
+/* Styles for the image slider */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slides {
+  display: flex;
+  margin-top:-3%;
+}
+
+.slides img {
+  display: none;
+  width: 100%;
+  height:80%
+  /* Add other image styles */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio (change as needed) */
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Your existing CSS */
+/* ... */
+
+/* Tour section styles */
+.tour {
+  padding: 50px;
+}
+
+.preview {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.tour-item {
+  cursor: pointer;
+  text-align: center;
+}
+
+.tour-item img {
+  width: 800px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tour-content {
+  display: none;
+}
+
+.tour-content.active {
+  display: block;
+}
+
+
+
 
